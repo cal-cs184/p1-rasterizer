@@ -164,9 +164,7 @@ endif(WIN32)
 
 # Required packages
 find_package(OpenGL REQUIRED)
-if(NOT WIN32)
-  find_package(Freetype REQUIRED)
-endif()
+find_package(Freetype REQUIRED)
 
 include_directories( ${OPENGL_INCLUDE_DIRS})
 

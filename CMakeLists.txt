@@ -119,9 +119,7 @@ endif(WIN32)
 # Required packages
 find_package(OpenGL REQUIRED)
 find_package(Threads REQUIRED)
-if(NOT WIN32)
-  find_package(Freetype REQUIRED)
-endif()
+find_package(Freetype REQUIRED)
 
 # CGL
 add_subdirectory(CGL)
